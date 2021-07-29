@@ -1,8 +1,9 @@
+import os
 import logging
 import requests
 from aiogram import Bot, Dispatcher, executor, types
 
-api_token = '1910080285:AAHNEAiSL7dAofE_88b0PMPqlZqbfHTWeB8'
+api_token = os.environ.get('BOT_TOKEN')
 
 # Logging
 logging.basicConfig(level=logging.INFO)
